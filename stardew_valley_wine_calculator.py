@@ -8,7 +8,7 @@ starprice = {
     'iridium': 3,
 }
 price = {
-    'strawberrry': 240,
+    'strawberry': 240,
     'pinapple': 660,
     'banana': 330,
     'starfruit': 1500,
