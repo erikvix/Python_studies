@@ -9,7 +9,7 @@ Selecione as opções abaixo:
 -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 [ 4 ] ir para o conversor de MEDIDAS
 [ 5 ] ir para o conversor de TEMPERATURA
-[ 6 ] ir para o conversor de MOEDAS
+[ 6 ] ir para o conversor de MOEDAS 
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 """)
 opção = input("Sua opção: ")
