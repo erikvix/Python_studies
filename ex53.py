@@ -11,7 +11,7 @@ for i in range(1, 8):
 print(
     f"Ao todo tivemos {velho} pessoas maiores de idade, e {novo} menores de idade")
 
-# VERSÃO ALTERNATIVA
+# Alternative Version
 
 # from datetime import date
 # atual = date.today().year

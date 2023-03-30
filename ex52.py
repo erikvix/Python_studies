@@ -1,4 +1,4 @@
-x = int(input("Digite um número: "))
+x = int(input("Enter a number: "))
 y = 0
 for i in range(1, x + 1):
     if x % i == 0:
@@ -9,8 +9,8 @@ for i in range(1, x + 1):
         print('\033[31m', end='')
     print(i, end=' ')
 
-print(f"\n\033[mo número {x} foi dividido {y} vezes")
+print(f"\n\033[m{x} was divided {y} times")
 if y == 2:
-    print("\n\033[mO número é primo")
+    print("\n\033[mThe number is prime")
 else:
-    print("O número não é primo")
+    print("The number is not prime")
