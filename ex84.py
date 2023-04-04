@@ -1,13 +1,8 @@
 i = 0
 nam_list = []
 we_list = []
-max_nam_we =[]
-min_nam_we =[]
-
-
-
-
-
+max_nam_we = []
+min_nam_we = []
 
 
 while i < 1:
@@ -26,6 +21,7 @@ while i < 1:
 
 for i in max(we_list):
     max_nam_we.append(nam)
-print(f"Ao todo, você cadastrou {len(nam)} pessoas. noem maior peso {max_nam_we}")
+print(
+    f"Ao todo, você cadastrou {len(nam)} pessoas. noem maior peso {max_nam_we}")
 print(f"O maior peso foi de {max(we_list)}.")
 print(f"O menor peso foi de {min(we_list)}.")
