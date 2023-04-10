@@ -19,13 +19,13 @@ while True:
 print("-=" * 25)
 print(f"No. {'Nome'}{'Média':>20}")
 print("-" * 32)
-# for pos, v in enumerate(lista):
-#     print(f"{pos:<4}{v[0]:<20}{média[pos]}")
-# # x = str(input("Mostrar nota de qual aluno: "))
-# # while True:
-# #     print('-'*32)
-# #     x = str(input("Mostrar nota de qual aluno: "))
-# #     if x == 999:
-# #         break
-# #     if x <= len(lista) - 1:
-# print(f"Notas de {pos[0]} são {lista2[0], lista2[1]}")
+for pos, v in enumerate(lista):
+    print(f"{pos:<4}{v[0]:<20}{média[pos]}")
+x = str(input("Mostrar nota de qual aluno: "))
+while True:
+    print('-'*32)
+    x = str(input("Mostrar nota de qual aluno: "))
+    if x == 999:
+        break
+    if x <= len(lista) - 1:
+        print(f"Notas de {pos[0]} são {lista2[0], lista2[1]}")
