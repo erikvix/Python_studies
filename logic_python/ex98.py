@@ -1,13 +1,28 @@
 from time import sleep
 
 
-def contador():
+def contador(x, y, z):
     print("-="*12)
-    print('Contagem de 1 até 10 de 1 em 1')
-    for i in range(1, 11):
-        sleep(1)
-        print(i, end=' ')
-    print('FIM')
+    print(f'Contagem de {x} até {y} de {z} em {z}')
+    if x < y:
+        cont = x
+        while cont <= y:
+            print(cont)
+            sleep(0.5)
+            cont += z
+        print('fim')
+    else:
+        cont = x
+        while cont >= y:
+            print(cont)
+            sleep(0.5)
+            cont -= z
+        print('fim')
 
 
-contador()
+contador(0, 10, 1)
+contador(10, 0, 2)
+ini = int(input("Digite o início: "))
+fim = int(input("Digite o fim: "))
+pas = int(input("Digite o passo: "))
+contador(ini, fim, pas)
