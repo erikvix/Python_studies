@@ -1,20 +1,29 @@
 i = 0
-lista = []
-n5 = []
+values = []
+odd = []
+even = []
 while i < 1:
-    x = int(input("Digite um número: "))
-    y = input("Deseja continuar [y/n]: ")
+    x = int(input("Enter a number: "))
+    y = input("Do you wish to continue [y/n]: ")
     if y == "n":
-        lista.append(x)
+        values.append(x)
         i += 1
     if y == "y":
-        lista.append(x)
+        values.append(x)
     else:
         break
-print(f'O tamanho da lista é de {len(lista)} números')
-lista.sort(reverse=True)
-print(lista)
-if 5 in lista:
-    print('O valor 5 faz parte da lista')
+    for v in (values):
+        if v % 2 == 0:
+            odd.append(v)
+        elif v % 2 == 1:
+            even.append(v)
+
+print(f'The list of even numbers: {odd}')
+print(f'The list of odd numbers: {even}')
+print(f'The size of the list is {len(values)} numbers')
+values.sort(reverse=True)
+print(values)
+if 5 in values:
+    print('The value 5 is part of the list')
 else:
-    print('O número 5 não faz parte da lista')
+    print('The number 5 is not part of the list')

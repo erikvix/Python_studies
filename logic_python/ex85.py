@@ -1,29 +1,28 @@
-lista = []
-dados = []
-mai = men = 0
+list = []
+data = []
+maximum = minimum = 0
 while True:
-    dados.append(str(input("Nome: ")))
-    dados.append(int(input("Peso: ")))
-    if len(lista) == 0:
-        mai = men = dados[1]
+    data.append(str(input("Name: ")))
+    data.append(int(input("Weight: ")))
+    if len(list) == 0:
+        maximum = minimum = data[1]
     else:
-        if dados[1] > mai:
-            mai = dados[1]
-        if dados[1] < men:
-            men = dados[1]
-    lista.append(dados[:])
-    dados.clear()
-    y = input("Deseja continuar [y/n]: ")
+        if data[1] > maximum:
+            maximum = data[1]
+        if data[1] < minimum:
+            minimum = data[1]
+    list.append(data[:])
+    data.clear()
+    y = input("Do you wish to continue [y/n]: ")
     if y in "Nn":
         break
 
-
 print("-="*30)
-print(f"Ao todo você cadastrou {len(lista)} pessoas")
-print(f"O maior peso foi de {mai}.")
-for p in lista:
-    if p[1] == mai:
+print(f"You have registered {len(list)} people in total")
+print(f"The maximum weight was {maximum}.")
+for p in list:
+    if p[1] == maximum:
         print(f'{p[0]}')
-    elif p[1] == men:
+    elif p[1] == minimum:
         print(f'{p[0]}')
-print(f"O menor peso foi de {men}. peso de ")
+print(f"The minimum weight was {minimum}.")

@@ -1,19 +1,20 @@
 matriz = [[0, 0, 0], [0, 0, 0], [0, 0, 0]]
-par = ter = seg = 0
+par = terceira_coluna = segunda_linha = 0
 
 
-for l in range(0, 3):
-    for c in range(0, 3):
-        matriz[l][c] = int(input(f"Digite o valor para {[l]} e {[c]}: "))
-        if matriz[l][c] % 2 == 0:
-            par += matriz[l][c]
-for matriz[l] in matriz:
-    ter += matriz[l][2]
-for c in range(0, 3):
-    if c == 0:
-        seg = matriz[1][c]
-    elif matriz[1][c] > seg:
-        seg = matriz[1][c]
+for linha in range(0, 3):
+    for coluna in range(0, 3):
+        matriz[linha][coluna] = int(
+            input(f"Digite o valor para {[l]} e {[c]}: "))
+        if matriz[linha][coluna] % 2 == 0:
+            par += matriz[linha][coluna]
+for matriz[linha] in matriz:
+    terceira_coluna += matriz[linha][2]
+for coluna in range(0, 3):
+    if coluna == 0:
+        segunda_linha = matriz[1][coluna]
+    elif matriz[1][coluna] > segunda_linha:
+        segunda_linha = matriz[1][coluna]
 
 print(f"""
 {matriz[0]}
@@ -22,5 +23,5 @@ print(f"""
 """)
 print("-=" * 30)
 print(f"A soma dos valores pares é {par}")
-print(f"A soma dos valores da 3º coluna é {ter}")
-print(f"O maior valor da 2º linha é {seg}")
+print(f"A soma dos valores da 3º coluna é {terceira_coluna}")
+print(f"O maior valor da 2º linha é {segunda_linha}")
