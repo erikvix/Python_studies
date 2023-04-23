@@ -1,4 +1,4 @@
-from uteis import moeda
+from uteis import data
 
-n = float(input("Digite seu valor: $"))
-print(f"{moeda.resum(n, 80, 40)}")
+n = data.leiaDinheiro("Digite seu valor: $")
+print(f"{data.resum(n, 80, 40)}")
