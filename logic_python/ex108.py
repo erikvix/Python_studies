@@ -1,2 +1,0 @@
-def moeda():
-    print("R$")

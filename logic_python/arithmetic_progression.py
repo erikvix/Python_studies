@@ -1,4 +1,4 @@
-# arithmetic-progression
+#
 
 first_num = int(input("enter the first therm "))
 ratio = int(input("ratio: "))
