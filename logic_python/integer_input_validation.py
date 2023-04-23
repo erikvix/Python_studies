@@ -1,8 +1,8 @@
-def leiaint(msg):
+def readint(msg):
     ok = False
     val = 0
     while True:
-        n = str(input(msg))
+        n = str(input(msg)).strip()
         if n.isnumeric():
             val = int(n)
             ok = True
@@ -13,5 +13,5 @@ def leiaint(msg):
     return val
 
 
-n = leiaint("Digite um número: ")
-print(f" voce acabou de digitar o valor {n}")
+n = readint("Enter a number: ")
+print(f"You just entered the value {n}")

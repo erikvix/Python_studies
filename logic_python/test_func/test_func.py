@@ -1,18 +1,22 @@
-def dobro(n):
+def double(n):
     db = n + n
     return db
 
 
-def metade(n):
+def half(n):
     mt = n / 2
     return mt
 
 
-def aumentar(n):
+def increase(n):
     am = n * 1.10
     return am
 
 
-def desconto(n):
+def discount(n):
     ds = n - (n * 0.10)
     return ds
+
+
+def currency(n=0, m="$"):
+    return f'{m}{n:,.2f}'

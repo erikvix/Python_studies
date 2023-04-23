@@ -1,4 +1,4 @@
-def fatorial(a=0, show=False):
+def factorial(a=0, show=False):
     e = 1
     for c in range(a, 0, -1):
         if show == True:
@@ -11,5 +11,5 @@ def fatorial(a=0, show=False):
     return e
 
 
-num = int(input("Digite um número: "))
-print(f'{fatorial(num, True)}')
+num = int(input("Enter a number: "))
+print(f'{factorial(num, True)}')

@@ -1,4 +1,4 @@
-def dobro(n, cond=False):
+def double(n, cond=False):
     if cond == True:
         db = n + n
         m = "R$"
@@ -7,7 +7,7 @@ def dobro(n, cond=False):
     return db
 
 
-def metade(n, cond=False):
+def half(n, cond=False):
     if cond == True:
         mt = n / 2
         m = "R$"
@@ -16,7 +16,7 @@ def metade(n, cond=False):
     return mt
 
 
-def aumentar(n, d, cond=False):
+def increase(n, d, cond=False):
     if cond == True:
         am = n+(n * d/100)
         m = "R$"
@@ -25,7 +25,7 @@ def aumentar(n, d, cond=False):
     return am
 
 
-def desconto(n, d, cond=False):
+def discount(n, d, cond=False):
     if cond == True:
         ds = n - (n * d/100)
         m = "R$"
@@ -34,22 +34,22 @@ def desconto(n, d, cond=False):
     return ds
 
 
-def moeda(n=0, m="R$"):
+def currency(n=0, m="R$"):
     return f'{m}{n}'.replace('.', ',')
 
 
-def resumo(n=0, a=0, d=0):
+def summary(n=0, a=0, d=0):
     db = n + n
     mt = n / 2
     am = n+(n * a/100)
     ds = n - (n * d/100)
     m = "R$"
     print("-"*30)
-    print(f"{'RESUMO DE VALOR':^30}")
+    print(f"{'VALUE SUMMARY':^30}")
     print("-"*30)
-    print(f"Preço analisado: \t{moeda(n)}")
-    print(f"Dobro do preço: \t{dobro(n, True)}")
-    print(f'Metade do preço: \t{metade(n, True)}')
-    print(f'{a}% de aumento: \t{aumentar(n, a, True)}')
-    print(f'{d}% de redução: \t{desconto(n, d, True)}')
+    print(f"Analyzed price: {currency(n)}")
+    print(f"Double price: \t{double(n, True)}")
+    print(f"Half price: \t{half(n, True)}")
+    print(f"{a}% increase: \t{increase(n, a, True)}")
+    print(f"{d}% discount: \t{discount(n, d, True)}")
     print("-"*30)
